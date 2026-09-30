@@ -1,3 +1,8 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
 div {
     margin-bottom: 20px;
 }
@@ -6,6 +11,11 @@ button {
     border-radius: 7%;
     border-style: none;
     padding: 1rem;
+    color: inherit;
+}
+
+input {
+    color: inherit;
 }
 
 .horizontal-center {
