@@ -9,7 +9,14 @@ function loadVocab() {
         return JSON.parse(localStorage.getItem("vocab"));
     }
     else {
-        return vocabMaster;
+        localStorage.setItem("vocab", JSON.stringify(vocabMaster));
+
+        //Loads a copy of vocabMaster to vocab
+        const temp = [];
+        for (el of vocabMaster) {
+            temp.push(el);
+        }
+        return temp;
     }
 }
 
@@ -33,7 +40,11 @@ function loadRange() {
 
         //Reflect range in input values
         document.getElementById("start-range").value = startRange;
-        document.getElementById("end-range").value = startRange;
+        document.getElementById("end-range").value = endRange;
+    }
+    else {
+        localStorage.setItem("startRange", 3);
+        localStorage.setItem("endRange", 6);
     }
 }
 
@@ -121,6 +132,12 @@ function initalizeVocab(start, end) {
         }
     }
 
+    if (vocab.length === 0) {
+        for (el of vocabMaster) {
+            vocab.push(el);
+        }
+    }
+
     //Save to local storage
     localStorage.setItem("vocab", JSON.stringify(vocab));
 }
@@ -134,5 +151,3 @@ function renderInfo() {
     info.innerText = `Remaining: ${vocab.length}
     Chapters ${startRange}-${endRange}`;
 }
-
-console.log(JSON.stringify(vocab));
