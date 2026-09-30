@@ -1,5 +1,38 @@
+div {
+    margin-bottom: 20px;
+}
+
+button {
+    border-radius: 7%;
+    border-style: none;
+    padding: 1rem;
+}
+
+.horizontal-center {
+    width: inherit;
+    margin: 0;
+    text-align: center;
+}
+
+
 #card {
     font-size: xx-large;
     border-color: antiquewhite;
     border-width: 10px;
+}
+
+#correct {
+    background-color: rgb(98, 247, 98);
+}
+
+#show {
+    background-color: rgb(183, 194, 255);
+}
+
+#wrong {
+    background-color: red;
+}
+
+#submit-chapters-button {
+    background-color: blueviolet;
 }
