@@ -135,4 +135,4 @@ function renderInfo() {
     Chapters ${startRange}-${endRange}`;
 }
 
-console.log(JSON.stringify(vocab)); */
+console.log(JSON.stringify(vocab));
