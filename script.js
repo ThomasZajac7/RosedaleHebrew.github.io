@@ -4,14 +4,42 @@ const vocabMaster = [
 ];
 
 
+function loadVocab() {
+    if (localStorage.getItem("vocab")) {
+        return JSON.parse(localStorage.getItem("vocab"));
+    }
+    else {
+        return vocabMaster;
+    }
+}
+
+const vocab = loadVocab();
+const HIndex = 0;
+const EIndex = 1;
+const CIndex = 2;
+
 const card = document.getElementById("card");
 let studySide = 0;
 let side = 0;
 
-let vocab = vocabMaster;
-const HIndex = 0;
-const EIndex = 1;
-const CIndex = 2;
+
+let startRange = 3;
+let endRange = 6;
+
+function loadRange() {
+    if (localStorage.getItem("startRange")) {
+        startRange = localStorage.getItem("startRange")
+        endRange = localStorage.getItem("endRange");
+
+        //Reflect range in input values
+        document.getElementById("start-range").value = startRange;
+        document.getElementById("end-range").value = startRange;
+    }
+}
+
+loadRange();
+
+let rand = 0;
 
 const correctBtn = document.getElementById("correct");
 const showBtn = document.getElementById("show");
@@ -25,14 +53,31 @@ wrongBtn.addEventListener("click", wrong);
 const submitChaptersBtn = document.getElementById("submit-chapters-button");
 submitChaptersBtn.addEventListener("click", submitChapters);
 
+info = document.getElementById("info");
 
-rand = Math.floor(Math.random() * vocab.length);
-card.innerText = vocab[rand][side]
+//Start by loading a card to use
+initalizeRandomCard();
+
+//Then render info of remaining and chapter.
+renderInfo();
 
 function correct() {
+    if (vocab.length > 1) {
+        //Removes the correct word from remaining list
+        vocab.splice(rand, 1);
+    }
+    else {
+        initalizeVocab(startRange, endRange);
+    }
+    //Gets the next random card
     rand = Math.floor(Math.random() * vocab.length);
     side = studySide;
     card.innerHTML = vocab[rand][side];
+
+    renderInfo();
+
+    //Save to local storage
+    localStorage.setItem("vocab", JSON.stringify(vocab));
 }
 
 function show() {
@@ -41,24 +86,55 @@ function show() {
     card.innerHTML = vocab[rand][side];
 }
 
+function wrong() {
+    //Gets the next random card
+    rand = Math.floor(Math.random() * vocab.length);
+    side = studySide;
+    card.innerHTML = vocab[rand][side];
+
+    renderInfo();
+}
+
 function submitChapters() {
 
     //Submits the range!
-    rangeStart = document.getElementById("startRange").valueAsNumber;
-    rangeEnd = document.getElementById("endRange").valueAsNumber;
+    startRange = document.getElementById("start-range").valueAsNumber;
+    endRange = document.getElementById("end-range").valueAsNumber;
 
-    initalizeVocab(rangeStart, rangeEnd);
+    initalizeVocab(startRange, endRange);
+    initalizeRandomCard();
+    renderInfo();
+
+    //Save start and end range
+    localStorage.setItem("startRange", startRange);
+    localStorage.setItem("endRange", endRange);
 }
 
 function initalizeVocab(start, end) {
-    vocab = vocabMaster;
-    for (let i = 0; i < vocab.length; i++) {
-        if (vocab[i][CIndex] < start || vocab[i][CIndex] > end) {
-            console.log(vocab[i]);
-            vocab.splice(i, 1);
+    //Clear the array
+    vocab.splice(0,);
+
+    for (let i = 0; i < vocabMaster.length; i++) {
+        if (Number(vocabMaster[i][CIndex]) >= start && Number(vocabMaster[i][CIndex]) <= end) {
+            //push the vocab in range to vocab
+            vocab.push(vocabMaster[i]);
         }
     }
+
+    //Save to local storage
+    localStorage.setItem("vocab", JSON.stringify(vocab));
 }
+
+function initalizeRandomCard() {
+    rand = Math.floor(Math.random() * vocab.length);
+    card.innerText = vocab[rand][side];
+}
+
+function renderInfo() {
+    info.innerText = `Remaining: ${vocab.length}
+    Chapters ${startRange}-${endRange}`;
+}
+
 /* for (let i = 0; i < 4; i++) {
     for (el of vocab[i]) {
 
