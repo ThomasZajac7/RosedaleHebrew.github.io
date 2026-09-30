@@ -28,8 +28,8 @@ let endRange = 6;
 
 function loadRange() {
     if (localStorage.getItem("startRange")) {
-        startRange = localStorage.getItem("startRange")
-        endRange = localStorage.getItem("endRange");
+        startRange = Number(localStorage.getItem("startRange"));
+        endRange = Number(localStorage.getItem("endRange"));
 
         //Reflect range in input values
         document.getElementById("start-range").value = startRange;
@@ -134,3 +134,5 @@ function renderInfo() {
     info.innerText = `Remaining: ${vocab.length}
     Chapters ${startRange}-${endRange}`;
 }
+
+console.log(JSON.stringify(vocab)); */
