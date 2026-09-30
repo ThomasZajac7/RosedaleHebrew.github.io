@@ -134,12 +134,3 @@ function renderInfo() {
     info.innerText = `Remaining: ${vocab.length}
     Chapters ${startRange}-${endRange}`;
 }
-
-/* for (let i = 0; i < 4; i++) {
-    for (el of vocab[i]) {
-
-        el.push(i + 3);
-
-    }
-}
-console.log(JSON.stringify(vocab)); */
