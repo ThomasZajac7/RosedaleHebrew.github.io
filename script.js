@@ -152,23 +152,24 @@ const card = document.getElementById("card");
 let studySide = 0;
 let side = 0;
 
-
-let startRange = 3;
-let endRange = 6;
+//Sets range to the starting chapter and ending chapter of available vocab
+let minRange = vocabMaster[0][CIndex];
+let maxRange = vocabMaster[vocabMaster.length - 1][CIndex];
+let startRange = minRange
+let endRange = maxRange
 
 function loadRange() {
     if (localStorage.getItem("startRange")) {
         startRange = Number(localStorage.getItem("startRange"));
         endRange = Number(localStorage.getItem("endRange"));
-
-        //Reflect range in input values
-        document.getElementById("start-range").value = startRange;
-        document.getElementById("end-range").value = endRange;
     }
     else {
-        localStorage.setItem("startRange", 3);
-        localStorage.setItem("endRange", 6);
+        localStorage.setItem("startRange", startRange);
+        localStorage.setItem("endRange", endRange);
     }
+    //Reflect range in input values
+    document.getElementById("start-range").value = startRange;
+    document.getElementById("end-range").value = endRange;
 }
 
 loadRange();
@@ -235,13 +236,21 @@ function submitChapters() {
     startRange = document.getElementById("start-range").valueAsNumber;
     endRange = document.getElementById("end-range").valueAsNumber;
 
-    initalizeVocab(startRange, endRange);
-    initalizeRandomCard();
-    renderInfo();
+    //If range is within available chapters, run new vocab list
+    if (startRange >= minRange && endRange <= maxRange && startRange < endRange) {
 
-    //Save start and end range
-    localStorage.setItem("startRange", startRange);
-    localStorage.setItem("endRange", endRange);
+        initalizeVocab(startRange, endRange);
+        initalizeRandomCard();
+        renderInfo();
+
+        //Save start and end range
+        localStorage.setItem("startRange", startRange);
+        localStorage.setItem("endRange", endRange);
+    }
+    else {
+        document.getElementById("start-range").value = minRange;
+        document.getElementById("end-range").value = maxRange;
+    }
 }
 
 function initalizeVocab(start, end) {
@@ -274,3 +283,12 @@ function renderInfo() {
     info.innerText = `Remaining: ${vocab.length}
     Chapters ${startRange}-${endRange}`;
 }
+
+/* for (let i = 0; i < 4; i++) {
+    for (el of vocab[i]) {
+
+        el.push(i + 3);
+
+    }
+}
+console.log(JSON.stringify(vocab)); */
