@@ -237,7 +237,7 @@ function submitChapters() {
     endRange = document.getElementById("end-range").valueAsNumber;
 
     //If range is within available chapters, run new vocab list
-    if (startRange >= minRange && endRange <= maxRange && startRange < endRange) {
+    if (startRange >= minRange && endRange <= maxRange && startRange <= endRange) {
 
         initalizeVocab(startRange, endRange);
         initalizeRandomCard();
