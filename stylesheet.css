@@ -46,3 +46,7 @@ input {
 #submit-chapters-button {
     background-color: blueviolet;
 }
+
+#update-info {
+    color: rgba(0, 0, 0, 0.53);
+}
