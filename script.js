@@ -562,7 +562,25 @@ const vocabMaster = [
 
     ["נֶגֶד", "(prep) opposite, in front of (151)", 16],
 
-    ["שָׁם", "there, then, at that time (835)", 16]
+    ["שָׁם", "there, then, at that time (835)", 16],
+
+    // Chapter 17 -- Verified
+    ["אָבַד", "(Q) to perish, vanish, be(come) lost, go astray; (Pi) cause to perish, destroy; (Hi) exterminate (185)", 17],
+    ["אָהַב", "(Q) to love (of human and divine love); (Pi ptc) lover (217)", 17],
+    ["אָסַף", "(Q) to gather (in), take in, take away, destroy; (Ni) be gathered, taken away, assemble (200)", 17],
+    ["גָּלָה", "(Q) to uncover, reveal, disclose; (Ni) uncover, reveal oneself, be revealed, exposed; (Pi) uncover, reveal, disclose; (Hi) take (carry away) into exile (187)", 17],
+    ["טָהֵר", "(Q) to be clean (ceremonially), pure (morally); (Pi) cleanse, purify, pronounce clean; (Hith) purify or cleanse oneself (94)", 17],
+
+    ["כָּלָה", "(Q) to be complete, finished, at an end, accomplished, spent, exhausted, come to an end; (Pi) complete, finish, bring to an end (207)", 17],
+    ["רוּם", "(Q) to be high, exalted, rise, arise; (Hi) raise, lift up, exalt, take away; (Hoph) be exalted; (Polel) exalt, bring up, extol, raise (children) (197)", 17],
+    ["שָׁפַט", "(Q) to judge, make a judgment, decide (between), settle (a dispute or controversy); (Ni) go to court, plead, dispute (204)", 17],
+
+    ["אֹהֶל", "tent (348)", 17],
+    ["אֱמֶת", "truth, fidelity; אֲמִתֶּךָ (with 2ms suff) (127)", 17],
+    ["דָּם", "blood; bloodshed (361)", 17],
+    ["כִּסֵּא", "seat, chair, throne (135)", 17],
+    ["מִסְפָּר", "number (134)", 17],
+    ["שֶׁמֶשׁ", "(cs) sun (134)", 17]
 ];
 
 
