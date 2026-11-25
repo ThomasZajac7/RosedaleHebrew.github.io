@@ -580,7 +580,229 @@ const vocabMaster = [
     ["דָּם", "blood; bloodshed (361)", 17],
     ["כִּסֵּא", "seat, chair, throne (135)", 17],
     ["מִסְפָּר", "number (134)", 17],
-    ["שֶׁמֶשׁ", "(cs) sun (134)", 17]
+    ["שֶׁמֶשׁ", "(cs) sun (134)", 17],
+
+    // Chapter 18 - Verified
+
+    ["בָּחַר", "(Q) to choose, test, examine (172)", 18],
+    ["בִּין", "(Q) to understand, perceive, consider, give heed to; (Ni) be discerning, have understanding; (Hi) understand, teach; (Hith) show oneself perceptive (171)", 18],
+    ["דָּרַשׁ", "(Q) to seek, inquire (of or about), investigate, require, demand (165)", 18],
+    ["הָרַג", "(Q) to kill, slay (167)", 18],
+    ["חָפֵץ", "(Q) to delight in, take pleasure in, desire, be willing (74)", 18],
+    ["קָדַשׁ", "(Q) to be holy, set apart or consecrated; (Ni) be honored or treated as holy; (Pi) set apart, consecrate or dedicate as holy; (Hi) consecrate, dedicate or declare as holy; (Hith) show or keep oneself holy (171)", 18],
+    ["רָעָה", "(Q) to pasture, tend (flocks), graze, shepherd, feed (167)", 18],
+    ["שָׁאַל", "(Q) to ask (of), inquire (of), request, demand (176)", 18],
+
+    ["בַּעַל", "owner, master, husband, (divine title) Baal (161)", 18],
+    ["שֵׁבֶט", "rod, staff, scepter, tribe (190); שִׁבְטֵי יִשְׂרָאֵל \"the tribes of Israel\"", 18],
+    ["שָׁלוֹם", "peace, welfare, wholeness (237)", 18],
+
+    ["בַּעַד", "(prep) behind, through (104)", 18],
+    ["יַעַן", "on account of, because; 33x with יַעַן אֲשֶׁר as אֲשֶׁר (100)", 18],
+    ["נָא", "(emphatic particle) please, now, surely (405)", 18],
+
+
+    // Chapter 19 - Verified
+
+    ["בָּטַח", "(Q) to trust, rely upon (118)", 19],
+    ["בָּכָה", "(Q) to weep (in grief or joy), weep (for) (114)", 19],
+    ["לָבַשׁ", "(Q) to put on a garment, clothe, be clothed; (Hi) clothe (112)", 19],
+    ["שָׂרַף", "(Q) to burn (completely), destroy; (Ni) be burned (117)", 19],
+    ["שָׁלֵם", "(Q) to be complete, finished; (Pi) complete, finish, make whole, restore, reward; (Hi) bring to completion, consummate (116)", 19],
+
+    ["דּוֹר", "generation; also spelled דֹּר; (mp) דֹּרוֹת  (167)", 19],
+    ["זֶרַע", "seed, offspring, descendants (229)", 19],
+    ["חוּץ", "outside, street; (mp) חוּצוֹת; (prefixed with prep מִן) מִחוּץ from outside, outside (164)", 19],
+    ["מְלָאכָה", "work, occupation, service (167)", 19],
+
+    ["עָוֹן", "transgression, iniquity, guilt, punishment (of sin); (mp) עֲוֹנוֹת (233)", 19],
+    ["פַּר", "bull, ox, steer (133)", 19],
+    ["פֶּתַח", "opening, entrance, doorway (164)", 19],
+    ["רֹב", "multitude, abundance, greatness (150)", 19],
+    ["שָׂפָה", "lip, language, edge, shore (178)", 19],
+
+
+    // Chapter 20 - Verified
+
+    ["טָמֵא", "(Q) to be(come) unclean; (Ni) defile oneself; (Pi) defile, pronounce or declare unclean; (Hith) defile oneself, become unclean (162)", 20],
+    ["נָגַע", "(Q) to touch, strike, reach; (Hi) touch, reach, throw, arrive (150)", 20],
+    ["נוּס", "(Q) to flee, escape (160)", 20],
+    ["סָבַב", "(Q) to turn (about), go around, surround; (Ni) turn; (Hi) cause to go around, lead around (163)", 20],
+    ["סָפַר", "(Q) to count; (Pi) count, recount, make known, proclaim, report, tell (107)", 20],
+    ["קָרָא", "(Q) to meet, encounter, happen; inf cstr with prep לִקְרַאת ׳ל toward, against, opposite (136)", 20],
+    ["שָׂמַח", "(Q) to rejoice, be joyful, glad; (Pi) cause to rejoice, gladden, make someone happy (156)", 20],
+    ["שָׁבַר", "(Q) to break (up), break in pieces, smash, shatter; (Ni) be smashed, broken, shattered or destroyed; (Pi) shatter, smash, break (148)", 20],
+
+    ["יַיִן", "wine; (ms cstr) יֵין (141)", 20],
+    ["מַעֲשֶׂה", "(ms) work, deed, act (235)", 20],
+    ["עֲבֹדָה", "work, labor, service, worship (145)", 20],
+    ["עֵדָה", "congregation, assembly (171)", 20],
+    ["קֶרֶב", "inner part(s), organ(s), body; (prep) בְּקֶרֶב (155x) in the middle of, among (227)", 20],
+
+    ["בִּלְתִּי", "(negates inf cstr) not, except; also spelled לְבִלְתִּי (86x) with prep לְ (112)", 20],
+    ["יַחְדָּו", "together, at the same time (96)", 20],
+
+    // Chapter 21 - Verified
+
+    ["זָבַח", "(Q) to slaughter (for sacrifice), sacrifice; (Pi) offer sacrifice, sacrifice (134)", 21],
+    ["חָנָה", "(Q) to decline, camp, encamp, pitch camp, lay siege to (143)", 21],
+    ["נוּחַ", "(Q) to rest, settle down, repose; (Hi) cause to rest, secure rest, set, leave (behind or untouched) (140)", 21],
+    ["נָסַע", "(Q) to pull (out or up), set out, start out, depart, journey (146)", 21],
+    ["פָּנָה", "(Q) to turn (toward, from, to the side, away) (134)", 21],
+    ["פָּתַח", "(Q) to open (up); (Ni) be opened, loosened, set free; (Pi) let loose, loosen (136)", 21],
+    ["רָדַף", "(Q) to pursue, follow after, chase, persecute (144)", 21],
+    ["שָׂנֵא", "(Q) to hate; (Pi ptc) enemy (148)", 21],
+    ["שָׁאַר", "(Ni) to remain, be left over, survive; (Hi) leave (someone or something) remaining (133)", 21],
+
+    ["מוֹעֵד", "appointed time (of feast), meeting place, assembly (223)", 21],
+    ["מַחֲנֶה", "(cs) camp, army; (cp) מַחֲנוֹת and מַחֲנִים (215)", 21],
+    ["מַלְאָךְ", "messenger, angel (213)", 21],
+    ["מִנְחָה", "gift, offering, tribute (211)", 21],
+    ["נַחֲלָה", "inheritance, property, possession (222)", 21],
+
+
+    // Chapter 22
+
+    ["בּוֹשׁ", "(Q) to be ashamed; (Hi) put to shame (125)", 22],
+    ["גָּדַל", "(Q) to grow up, be(come) great, strong, wealthy, important; (Pi) bring up (children), make great, extol; (Hi) make great, magnify, do great things (117)", 22],
+    ["חָשַׁב", "(Q) to think, consider, devise, plan, value, reckon; (Ni) be reckoned, accounted, considered (as); (Pi) think, consider, devise, plan (124)", 22],
+    ["יָטַב", "(Q) to be well with, go well with, be pleasing (to); (Hi) make things go well for, do good to, deal well with, treat kindly (117)", 22],
+    ["לָכַד", "(Q) to take, capture, catch, seize; (Ni) be caught, captured (121)", 22],
+    ["קָבַץ", "(Q) to collect, gather, assemble; (Ni) be gathered, assembled; (Pi) gather together, assemble (127)", 22],
+    ["קָבַר", "(Q) to bury; (Ni) be buried (133)", 22],
+    ["שָׁכַן", "(Q) to settle (down), abide, reside, dwell, inhabit; (Pi) abide, dwell (130)", 22],
+    ["שָׁפַךְ", "(Q) to pour (out), spill, shed (blood) (117)", 22],
+
+    ["אֲרוֹן", "(cs) ark, chest, coffin (202); אֲרוֹן הַבְּרִית \"the ark of the covenant\"", 22],
+    ["חֹק", "statute, appointed time, portion; (mp) חֻקִּים (131)", 22],
+    ["חֻקָּה", "statute, ordinance (104)", 22],
+    ["מִשְׁכָּן", "dwelling place, tabernacle; (mp) מִשְׁכָּנוֹת (139)", 22],
+
+
+    // Chapter 23
+
+    ["בֶּגֶד", "clothes, garment, covering (216)", 23],
+    ["בְּהֵמָה", "animal(s), beast(s), cattle (190)", 23],
+    ["בְּכוֹר", "firstborn, oldest offspring (120)", 23],
+    ["חָכְמָה", "wisdom, skill (153)", 23],
+    ["חֵמָה", "wrath, heat, poison (125)", 23],
+    ["חָצֵר", "(cs) courtyard, village, settlement; (cp) חֲצֵרִים and חֲצֵרוֹת (192)", 23],
+    ["כֹּחַ", "strength, power (126)", 23],
+    ["נְחֹשֶׁת", "copper, bronze (139)", 23],
+    ["נָשִׂיא", "chief, leader, prince (130)", 23],
+    ["עֶצֶם", "(fs) bone, skeleton (126)", 23],
+    ["עֶרֶב", "evening, sunset (134)", 23],
+    ["קָהָל", "assembly, community, crowd (123)", 23],
+    ["שֶׁמֶן", "oil, fat (193)", 23],
+
+
+    // Chapter 24
+
+    ["אָמַן", "(Ni) to be reliable, faithful or trustworthy; (Hi) believe (in), trust, have trust in, put trust in (97)", 24],
+    ["יָשַׁע", "(Ni) to be delivered, victorious, receive help; (Hi) help, save, deliver, rescue, come to the aid of (205)", 24],
+    ["יָתַר", "(Ni) to be left over, remain; (Hi) have (something) left over or remaining (106)", 24],
+    ["כּוּן", "(Ni) to be established, steadfast, ready, arranged, stand firm; (Hi) establish, set up, prepare, make ready, make firm (219)", 24],
+    ["לָחַם", "(Q, Ni) to fight, do battle with (rare in Q) (171)", 24],
+    ["מָלַט", "(Ni) to escape, flee to safety, slip away; (Pi) let someone escape, save someone, leave undisturbed (94)", 24],
+    ["נָחַם", "(Ni) to be sorry, regret, have compassion (on or for); (Pi) comfort, console (108)", 24],
+    ["נָכָה", "(Hi) to strike, smite, beat, strike dead, destroy; (Hoph) be struck down dead, beaten (501)", 24],
+    ["נָצַב", "(Ni) to stand (firm), take one's stand, station oneself, be positioned; (Hi) station, set (up), place, establish (74)", 24],
+    ["נָצַל", "(Ni) to be rescued, delivered, saved; (Hi) tear from, take away, deliver from (213)", 24],
+    ["סָתַר", "(Ni) to be hidden, hide oneself; (Hi) hide (82)", 24],
+    ["רוּץ", "(Q) to run (104)", 24],
+    ["שָׁחַת", "(Pi, Hi) to ruin, destroy, spoil, annihilate (152)", 24],
+    ["שָׁמַד", "(Ni) to be exterminated, destroyed or annihilated; (Hi) exterminate, annihilate, destroy (90)", 24],
+
+
+    // Chapter 25
+
+    ["הָפַךְ", "(Q) to turn, overturn, overthrow, destroy; (Ni) be destroyed, turned into, changed (95)", 25],
+    ["חָרָה", "(Q) to be(come) hot, burn with anger, become angry (93)", 25],
+    ["רָעַע", "(Q) to be bad, evil or displeasing; (Hi) do evil, do wickedly, do injury, harm, treat badly (98)", 25],
+    ["שָׂבַע", "(Q) to be satisfied, have one's fill (of), eat or drink one's fill; (Hi) satisfy (97)", 25],
+    ["שָׁכַח", "(Q) to forget; (Ni) be forgotten (102)", 25],
+    ["שָׁמֵם", "(Q) to be deserted, uninhabited; (Ni) be made uninhabited, desolate, deserted; (Hi) make deserted or desolated (92)", 25],
+
+    ["זָכָר", "male, man (82)", 25],
+    ["חֹשֶׁךְ", "darkness (80)", 25],
+    ["כְּסִיל", "fool, shameless person (70)", 25],
+    ["מִגְרָשׁ", "open land, pasture (114)", 25],
+    ["מַמְלָכָה", "kingdom, dominion, reign (117)", 25],
+    ["נָהָר", "river, stream; (mp) נְהָרִים and נְהָרוֹת (119)", 25],
+    ["צֶדֶק", "righteousness, equity (123)", 25],
+    ["שִׁיר", "song (78)", 25],
+
+
+    // Chapter 26
+
+    ["בָּקַשׁ", "(Pi) to seek, search for, look for, discover, demand, require; (Pu) be sought (225)", 26],
+    ["דָּבַר", "(Q) to speak (rare in Q); (Pi) speak (1,136)", 26],
+    ["הָלַל", "(Pi) to praise, sing hallelujah; (Pu) be praised, praiseworthy; (Hith) boast (146)", 26],
+    ["כָּסָה", "(Q) to cover, conceal, hide; (Pi) cover (up), conceal, clothe (153)", 26],
+    ["מָהַר", "(Pi) to hasten, hurry, go or come quickly (81)", 26],
+    ["נָבָא", "(Ni) to prophesy, be in a state of prophetic ecstasy; (Hith) speak or behave as a prophet (115)", 26],
+    ["סָגַר", "(Q) to shut (in), close; (Hi) deliver (up), hand over, surrender, give up (91)", 26],
+    ["צִוָּה", "(Pi) to command, give an order, charge; (Pu) be ordered, be told, receive a command (496)", 26],
+    ["קָטַר", "(Pi) to make a sacrifice go up in smoke, offer (a sacrifice) by burning; (Hi) cause a sacrifice to go up in smoke (115)", 26],
+    ["שִׁיר", "(Q) to sing (of); (Q ptc) singer (88)", 26],
+    ["שָׁרַת", "(Pi) to minister, serve (98)", 26],
+
+    ["מִצְוָה", "commandment; (fp) מִצֺוֹת; מִצֺוֹת יְהוָה \"the commandments of the Lord\" (184)", 26],
+
+    ["טָהוֹר", "(adj) clean, pure (96)", 26],
+    ["טָמֵא", "(adj) unclean (88)", 26],
+    ["עָנִי", "(adj) poor, humble, afflicted (80)", 26],
+
+
+    // Chapter 27
+
+    ["גּוּר", "(Q) to sojourn, dwell (stay) as a foreigner or alien (82)", 27],
+    ["יָעַץ", "(Q) to advise, counsel, plan, decide; (Ni) consult or take counsel together (80)", 27],
+    ["לָמַד", "(Q) to learn; (Pi) teach (87)", 27],
+    ["מָכַר", "(Q) to sell, hand over; (Ni) be sold, sell oneself (into slavery) (80)", 27],
+    ["מָשַׁל", "(Q) to rule, reign, govern, have dominion (81)", 27],
+    ["עָזַר", "(Q) to help, assist, come to the aid of (82)", 27],
+    ["קָלַל", "(Q) to be small, insignificant, of little account, swift; (Ni, Pi) declare cursed; (Hi) treat with contempt (82)", 27],
+    ["קָנָה", "(Q) to get, acquire, buy (85)", 27],
+    ["שָׁחַט", "(Q) to slaughter (animals for sacrifice) (81)", 27],
+
+    ["כָּנָף", "(fs) wing, edge, extremity (111)", 27],
+    ["עַמּוּד", "pillar, column, tent pole (112)", 27],
+    ["שֶׁקֶר", "lie, deception, falsehood (113)", 27],
+
+
+    // Chapter 28
+
+    ["אָסַר", "(Q) to tie, bind, fetter, imprison (73)", 28],
+    ["זָעַק", "(Q) to cry (out), call for help, summon (73)", 28],
+    ["חָלָה", "(Q) to be(come) weak, tired, sick; (Ni) be exhausted; (Pi) appease, flatter (75)", 28],
+    ["חָנַן", "(Q) to be gracious to, show favor to, favor; (Hith) plead for grace, favor or compassion (77)", 28],
+    ["מָאַס", "(Q) to refuse, reject, despise (74)", 28],
+    ["עוּר", "(Q) to be awake, stir up; (Hi) arouse, rouse, wake up, stir up; (Polel) arouse, disturb, awaken (80)", 28],
+    ["עָרַךְ", "(Q) to set in order, lay out, set in rows, arrange, stack (wood), draw up a battle formation (75)", 28],
+    ["רָחַץ", "(Q) to wash (with water), wash (off or away), bathe, bathe oneself (72)", 28],
+
+    ["יָמִין", "(fs) right hand, south (141)", 28],
+    ["מַרְאֶה", "vision, sight, appearance (103)", 28],
+    ["עָפָר", "dust, dry earth (110)", 28],
+    ["פַּעַם", "(fs) foot, pace, time; (fp) פְּעָמִים (118)", 28],
+
+
+    // Chapter 29
+
+    ["גֵּר", "stranger, sojourner, alien (92)", 29],
+    ["חַיָּה", "animal, beast, living thing (96)", 29],
+    ["חֵלֶב", "fat; (metaphorically) best, choice part (92)", 29],
+    ["חֲמוֹר", "donkey (96)", 29],
+    ["יוֹתֵר", "rest, remainder, excess (97)", 29],
+    ["נַחַל", "stream, brook, wadi (137)", 29],
+    ["עוֹר", "skin, hide, leather (99)", 29],
+    ["עֹז", "strength, power, might; (with 3ms suff) עֻזּוֹ (76)", 29],
+    ["פֶּשַׁע", "transgression, rebellion (93)", 29],
+    ["קָצֶה", "(ms) end, border, outskirts (92)", 29],
+    ["שִׂמְחָה", "joy, gladness (94)", 29],
+
+    ["תָּמִים", "(adj) blameless, perfect, honest, devout (91)", 29]
 ];
 
 
