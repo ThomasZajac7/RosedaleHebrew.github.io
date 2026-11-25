@@ -631,6 +631,21 @@ function loadRange() {
 
 loadRange();
 
+//All code for the menu
+const menuBtn = document.getElementById("menu-button");
+menuBtn.addEventListener("click", openMenu);
+
+const darkModeChk = document.getElementById("dark-mode-chk");
+darkModeChk.addEventListener("click", () => {
+    console.log("maybe dark!");
+    document.body.classList.toggle("is-dark");
+
+})
+function openMenu() {
+    document.querySelector(".menu").classList.toggle("is-shown");
+}
+
+
 let rand = 0;
 
 const correctBtn = document.getElementById("correct");
@@ -740,3 +755,12 @@ function renderInfo() {
     info.innerText = `Remaining: ${vocab.length}
     Chapters ${startRange}-${endRange}`;
 }
+
+/* for (let i = 0; i < 4; i++) {
+    for (el of vocab[i]) {
+
+        el.push(i + 3);
+
+    }
+}
+console.log(JSON.stringify(vocab)); */
