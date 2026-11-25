@@ -1,6 +1,14 @@
 body {
     font-family: 'Times New Roman', Times, serif;
-    color: black;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-color: bisque;
+}
+
+body.is-dark {
+    color: rgb(255, 16, 235);
+    background-color: rgb(43, 3, 81);
+    border-color: rgb(232, 85, 255);
 }
 
 div {
@@ -16,6 +24,28 @@ button {
 
 input {
     color: inherit;
+}
+
+.header {
+    border-style: double;
+    border-width: 0px;
+    border-color: inherit;
+    margin: 10px;
+    padding: 5px;
+}
+
+#menu-button {
+    padding: 0.5em;
+    background-color: rgba(188, 2, 255, 0.479);
+}
+
+.menu {
+    display: none;
+
+}
+
+.menu.is-shown {
+    display: block;
 }
 
 .horizontal-center {
